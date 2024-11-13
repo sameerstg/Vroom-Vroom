@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RCCP_Settings
   m_EditorClassIdentifier: 
   multithreading: 1
-  behaviorSelectedIndex: 0
+  behaviorSelectedIndex: 1
   overrideFPS: 0
   overrideFixedTimeStep: 0
   fixedTimeStep: 0.02
@@ -21,7 +21,7 @@ MonoBehaviour:
   autoSyncTransforms: 1
   maxAngularVelocity: 8
   maxFPS: -1
-  overrideBehavior: 0
+  overrideBehavior: 1
   behaviorTypes:
   - behaviorName: Balanced
     ABS: 1
@@ -106,8 +106,8 @@ MonoBehaviour:
     ABS: 0
     ESP: 0
     TCS: 0
-    steeringHelper: 1
-    tractionHelper: 1
+    steeringHelper: 0
+    tractionHelper: 0
     angularDragHelper: 0
     driftMode: 1
     driftAngleLimiter: 0
@@ -143,35 +143,35 @@ MonoBehaviour:
     differentialType: 3
     counterSteeringMinimum: 1
     counterSteeringMaximum: 1
-    steeringSpeedMinimum: 2
-    steeringSpeedMaximum: 2
+    steeringSpeedMinimum: 100
+    steeringSpeedMaximum: 200
     steeringHelperStrengthMinimum: 0.015
     steeringHelperStrengthMaximum: 0.015
     tractionHelperStrengthMinimum: 0.1
     tractionHelperStrengthMaximum: 0.5
-    angularDrag: 0.15
+    angularDrag: 0
     angularDragHelperMinimum: 0.05
     angularDragHelperMaximum: 0.25
     antiRollMinimum: 1000
     gearShiftingThreshold: 0.8
     gearShiftingDelayMinimum: 0.15
     gearShiftingDelayMaximum: 0.3
-    forwardExtremumSlip_F: 0.4
+    forwardExtremumSlip_F: 0.6
     forwardExtremumValue_F: 1
-    forwardAsymptoteSlip_F: 1
-    forwardAsymptoteValue_F: 1
-    forwardExtremumSlip_R: 0.4
-    forwardExtremumValue_R: 1
+    forwardAsymptoteSlip_F: 0.5
+    forwardAsymptoteValue_F: 0.5
+    forwardExtremumSlip_R: 1
+    forwardExtremumValue_R: 2
     forwardAsymptoteSlip_R: 1
     forwardAsymptoteValue_R: 1
     sidewaysExtremumSlip_F: 0.6
     sidewaysExtremumValue_F: 1
     sidewaysAsymptoteSlip_F: 0.5
     sidewaysAsymptoteValue_F: 0.5
-    sidewaysExtremumSlip_R: 0.6
-    sidewaysExtremumValue_R: 1
-    sidewaysAsymptoteSlip_R: 0.5
-    sidewaysAsymptoteValue_R: 0.5
+    sidewaysExtremumSlip_R: 1
+    sidewaysExtremumValue_R: 2
+    sidewaysAsymptoteSlip_R: 1
+    sidewaysAsymptoteValue_R: 1
   - behaviorName: Racing
     ABS: 1
     ESP: 1
